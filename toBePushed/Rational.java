@@ -1,8 +1,8 @@
 /*
-   Team SMilyFace --  Shaumik Ashraf, Maddie Ostergaard
+   Team SMilyFace --  Nobel Gautam, Maddie Ostergaard
    APCS1 pd9
-   HW32 -- Irrationality stops here
-   2015-11-16
+   HW33 -- Do you even add, bro?
+   2015-11-18
 */
 
 class Rational
