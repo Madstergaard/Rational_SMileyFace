@@ -2,7 +2,7 @@
 Team SMilyFace --  Shaumik Ashraf, Maddie Ostergaard
 APCS1 pd9
 HW32 -- Irrationality stops here
-2015-11-16
+2015-11-17
 */
 
 class Rational {
@@ -19,11 +19,11 @@ class Rational {
     public Rational(int numerator, int denominator) {
         p = numerator;
         q = denominator;
-	if (q==0){
-	    p = 0;
-	    q = 1;
-	    System.out.println("Invalid demoninator submitted. Number set to 0/1");
-	}
+		if (q==0){
+			p = 0;
+			q = 1;
+			System.out.println("Invalid demoninator submitted. Number set to 0/1");
+		}
     }
     
     //accessors
@@ -60,7 +60,7 @@ class Rational {
         
     }
     
-    //
+    
     public void divide(Rational r) {
         this.p *= r.getDenominator();
         this.q *= r.getNumerator();
@@ -68,21 +68,22 @@ class Rational {
     
     
 
-
-
+	//main function: test Rational class
     public static void main(String[] args){
-	Rational r = new Rational(2,3);
-	Rational s = new Rational(1,2);
-	Rational w = new Rational();
+	
+		Rational r = new Rational(2,3);
+		Rational s = new Rational(1,2);
+		Rational w = new Rational();
 
-	System.out.println(r + ", " + s + ", " + w);
+		System.out.println(r + ", " + s + ", " + w);
 
-	r.multiply(s);
-	s.divide(new Rational(1,4));
+		r.multiply(s);
+		s.divide(new Rational(1,4));
 
-	System.out.println(r);
-	System.out.println(s);
-    }
+		System.out.println(r);
+		System.out.println(s);
+    
+	}
 
 }
     
