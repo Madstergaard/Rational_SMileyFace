@@ -110,9 +110,15 @@ class Rational
         this.p = this.p * r.q - this.q * r.p;
         this.q *= r.q;
         reduce();
->>>>>>> 6bfb4bca604244d43a9402e9c63df4c2ae53e02b
     }
 
+    public boolean equals(Object obj){
+	if (obj instanceof Rational){
+	    return ((this.p)/(this.q) == (obj.p)/(obj.q));
+	}
+	return false;
+    }
+    
     // main
     public static void main(String[] args)
     {
