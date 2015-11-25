@@ -1,5 +1,5 @@
 /*
-   Team Kappa -- Conan Wong, Maddie Ostergaard
+   Team Kappa -- Conan Wong, Maddie Ostergaard 
    APCS1 pd9
    HW37 -- Rational Equality
    2015-11-24
