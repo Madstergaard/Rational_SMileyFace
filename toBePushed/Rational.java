@@ -76,7 +76,12 @@ class Rational {
 	this.q *= r.q;
     }
 
-    
+    public boolean equals(Object x){
+	if (x instanceof Rational){
+	    return (double)(this.p)/this.q == (double)(x.p)/x.q;
+	}
+	return false;
+    }
 
     // main
     public static void main(String[] args){
