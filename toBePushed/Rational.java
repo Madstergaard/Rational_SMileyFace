@@ -107,7 +107,11 @@ class Rational
 
     public boolean equals(Object obj){
 	if (obj instanceof Rational){
-	    return ((double)(this.p)/this.q == (double)(obj.p)/obj.q);
+	    double a = (this.p/this.q);
+	    double b = ((Rational)obj).p/((Rational)obj).q;
+	    if (a == b){
+		return true;
+	    }
 	}
 	return false;
     }
@@ -124,7 +128,7 @@ class Rational
         r.add(s);
         s.subtract(new Rational(1,4));
 
-	Systemout.println(s.equals(w));
+	System.out.println(s.equals(w));
 	
 			  // System.out.println(r);
 			  //  System.out.println(s);
