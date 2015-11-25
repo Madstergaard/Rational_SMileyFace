@@ -1,8 +1,8 @@
 /*
-   Team SMilyFace --  Nobel Gautam, Maddie Ostergaard
+   Team Kappa -- Conan Wong, Maddie Ostergaard
    APCS1 pd9
-   HW33 -- Do you even add, bro?
-   2015-11-18
+   HW37 -- Rational Equality
+   2015-11-24
 */
 
 class Rational
@@ -98,13 +98,6 @@ class Rational
         reduce();
     }
 
-<<<<<<< HEAD
-    public boolean equals(Object x){
-	if (x instanceof Rational){
-	    return (double)(this.p)/this.q == (double)(x.p)/x.q;
-	}
-	return false;
-=======
     public void subtract(Rational r)
     {
         this.p = this.p * r.q - this.q * r.p;
@@ -114,7 +107,7 @@ class Rational
 
     public boolean equals(Object obj){
 	if (obj instanceof Rational){
-	    return ((this.p)/(this.q) == (obj.p)/(obj.q));
+	    return ((double)(this.p)/this.q == (double)(obj.p)/obj.q);
 	}
 	return false;
     }
@@ -124,15 +117,17 @@ class Rational
     {
         Rational r = new Rational(2,17);
         Rational s = new Rational(1,31);
-        Rational w = new Rational();
+        Rational w = new Rational(1, 31);
 
         System.out.println(r + ", " + s + ", " + w);
 
         r.add(s);
         s.subtract(new Rational(1,4));
 
-        System.out.println(r);
-        System.out.println(s);
+	Systemout.println(s.equals(w));
+	
+			  // System.out.println(r);
+			  //  System.out.println(s);
     }
 }
 
